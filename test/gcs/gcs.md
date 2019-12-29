@@ -121,8 +121,8 @@ S3と同様、権限をpublicにすることで静的ファイルをホスティ
 
 ## ロギング
 
-ロギングを有効にできる。Stack Driver（Cloud WatchのGCP版）に保存できたり。
-ただしgcloudコマンドで設定する必要あり。
+ロギングを有効にできる。Stack Driver（Cloud WatchのGCP版）に保存できたり。  
+ただしgcloudコマンドで設定する必要あり。  
 Cloud Audit Logging（監査ログ）ってのもある。
 
 ## セキュリティ対策

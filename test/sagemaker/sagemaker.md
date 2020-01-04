@@ -25,7 +25,7 @@ SageMakerはre:invent 2019の発表で頭ひとつ抜きん出た感じがする
 
 ## なんで機械学習基盤が必要か
 
-https://aws.amazon.com/jp/blogs/news/introducing-amazon-sagemaker-operators-for-kubernetes/
+[https://aws.amazon.com/jp/blogs/news/introducing-amazon-sagemaker-operators-for-kubernetes/](https://aws.amazon.com/jp/blogs/news/introducing-amazon-sagemaker-operators-for-kubernetes/)  
 より抜粋。
 
 ```
@@ -44,7 +44,7 @@ ML ワークフローには、データのソーシングと準備、機械学�
 機械学習未経験の場合、上記の説明ではいまいちピンとこないはず。  
 そこで、機械学習未経験のアナタのために、エリカが例えてあげる。
 
-エリカがデータサイエンティストなら、アナタは農家。
+エリカがデータサイエンティストなら、アナタは農家。  
 （データサイエンティスト > 農家 という意図は一切ございません）
 
 農業には非常にたくさんの工程がある。
@@ -59,14 +59,16 @@ ML ワークフローには、データのソーシングと準備、機械学�
 
 SageNoukerを使うと以下の恩恵が得られる。
 
-1. 畑にする土地を事前に購入しなくても、使いたいときに使いたいだけ払って借りられる。（マネージドなインフラストラクチャ）
-2. 野菜を作る方法を試行錯誤するための実験場（notebook）が提供されている。
+1. 畑にする土地を事前に購入しなくても、使いたいときに使いたいだけ払って借りられる。  
+  （マネージドなインフラストラクチャ）
+2. 野菜を作る方法を試行錯誤するための実験場（notebook）が提供されている。  
    もしくは事前にいくつか用意されたものから選べる。（SageMaker Autopilot）
-3. 必要な前工程も実験場（notebook）上で可能。
+3. 必要な前工程も実験場（notebook）上で可能。  
    もしくは事前にいくつか用意されたものから選べる。（SageMaker Processing）
-4. 畑のメンテナンスは不要。SageNoukerが勝手にやってくれる。（Training job）
+4. 畑のメンテナンスは不要。SageNoukerが勝手にやってくれる。（Training job）  
    また、育てている間のチェックもできる。（SageMaker Debugger）
-5. 作物の収穫も勝手にやってくれて、一元的に保管場所を決められる。（S3, SageMaker Experiments）
+5. 作物の収穫も勝手にやってくれて、一元的に保管場所を決められる。  
+  （S3, SageMaker Experiments）
 6. 販売のノウハウは不要で、簡単な手間で可能。（推論APIのデプロイ）
 7. フィードバックもしやすい仕組みがある。（SageMaker Model Monitor）
 
@@ -94,7 +96,7 @@ Amazon SageMaker を使用したことがない場合は、最初の 2 か月間
 
 ## SageMaker Studio
 
-中身としては単にJupyter Labのカスタマイズ版っぽい。
+中身としては単にJupyter Labのカスタマイズ版っぽい。  
 ただ、SageMakerを利用するうえで必要なモジュールが同じUIに統合されていて必要十分な印象。
 
 ### 既存のnotebooksとの違い
@@ -102,9 +104,11 @@ Amazon SageMaker を使用したことがない場合は、最初の 2 か月間
 基本的には今後はStudio版のnotebooksを使っていけば良いはず。  
 以下のメリットがある。
 
-* Jupyter notebook用のインスタンス起動が速い（確かに既存のnotebookでは起動・停止が遅い。起動に数分待たされたりする）
+* Jupyter notebook用のインスタンス起動が速い  
+  （確かに既存のnotebookでは起動・停止が遅い。起動に数分待たされたりする）
 * notebookのインスタンス管理が不要。使っているときだけ費用がかかる（多分）  
-  インスタンスのスケールアップ, スケールダウンも自動でやってくれる。（どういうトリガでされるかは不明）
+* インスタンスのスケールアップ, スケールダウンも自動でやってくれる。  
+  （どういうトリガでされるかは不明）
 * ユーザ管理が楽（AWSコンソール上でユーザを追加できたりする）
 * 協同可能とうたっており、jupyter notebookの共有などをStudio内で簡単に可能。  
   （と書いてあるが、機能が見当たらない...単にGitでの共有を意味している...？）
@@ -112,7 +116,7 @@ Amazon SageMaker を使用したことがない場合は、最初の 2 か月間
 
 ### SageMaker最初に使うとき
 
-https://qiita.com/SatoshiGachiFujimoto/items/eecb66f5d57cb50324c7
+[https://qiita.com/SatoshiGachiFujimoto/items/eecb66f5d57cb50324c7](https://qiita.com/SatoshiGachiFujimoto/items/eecb66f5d57cb50324c7)  
 を参考にしてセットアップ
 
 ### SageMaker Studioを起動
@@ -142,7 +146,12 @@ bash-4.2$ nproc
   Autopilotによって大量のProcessing, Trainingジョブが生成されるので、それくらいお金がかかっている。
 
 
-### その他
+### 疑問点
+
+まだよく分からないことが多い。  
+ドキュメントを検索するが、英語版でもなかなか詳細が見当たらない。  
+
+AWSの知人にもちょっと聞きつつ、次回以降にまた深堀りしていきたい。
 
 * jupyter lab上のメニューでshutdownをすると接続できなくなってしまった...
     + 30分くらいしたら復旧した。notebookとかも残っていた。

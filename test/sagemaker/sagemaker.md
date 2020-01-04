@@ -179,4 +179,4 @@ AWSの知人にもちょっと聞きつつ、次回以降にまた深堀りし�
       => `Open candidate generation notebook` で見れてるやつ？  
       確かに `automl_interactive_runner.select_candidate` で与えているjsonの各パラメータが微妙に違っていたりして  
       探索してるっぽさは出ている。
-
+    - 参考： [https://aws.amazon.com/jp/blogs/news/amazon-sagemaker-autopilot-fully-managed-automatic-machine-learning/](https://aws.amazon.com/jp/blogs/news/amazon-sagemaker-autopilot-fully-managed-automatic-machine-learning/)

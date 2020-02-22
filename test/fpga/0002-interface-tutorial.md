@@ -159,8 +159,8 @@ sudo apt install openssh-server
 
 ## Peta Linux
 
-v2018.3の日本語版ドキュメントは見つからなかったので以下を参照。  
-https://www.xilinx.com/support/documentation/sw_manuals/xilinx2018_3/ug1144-petalinux-tools-reference-guide.pdf
+v2018.2の日本語版ドキュメントは見つからなかったので以下を参照。  
+[ug1144-petalinux-tools-reference-guide.pdf](https://www.xilinx.com/support/documentation/sw_manuals/xilinx2018_2/ug1144-petalinux-tools-reference-guide.pdf)
 
 ```
 $ sudo apt-get install -y gawk gcc git make net-tools libncurses5-dev tftpd zlib1g-dev libssl-dev \
@@ -186,19 +186,19 @@ lrwxrwxrwx 1 root root 4  2月 17 01:03 /bin/sh -> bash*
 インストール先のディレクトリをユーザ書き込み権限ありで作成
 
 ```
-$ sudo mkdir -p /opt/pkg/petalinux/2018.3/
+$ sudo mkdir -p /opt/pkg/petalinux/2018.2/
 $ sudo chown -R $USER:$USER /opt/pkg/
 ```
 
 ```
-$ ./petalinux-v2018.3-final-installer.run /opt/pkg/petalinux/2018.3/
+$ ./petalinux-v2018.2-final-installer.run /opt/pkg/petalinux/2018.2/
 ```
 
 セットアップ
 
 ```
-$ source /opt/pkg/petalinux/2018.3/settings.sh
-PetaLinux environment set to '/opt/pkg/petalinux/2018.3'
+$ source /opt/pkg/petalinux/2018.2/settings.sh
+PetaLinux environment set to '/opt/pkg/petalinux/2018.2'
 INFO: Checking free disk space
 INFO: Checking installed tools
 INFO: Checking installed development libraries
@@ -221,9 +221,6 @@ $ petalinux-create -t project -s ./xilinx-ultra96-reva-v2018.2-final.bsp
 ```
 $ cd xilinx-ultra96-reva-2018.2/
 $ petalinux-build
-WARNING: Your PetaLinux project was last modified by PetaLinux SDK version "2018.2",
-WARNING: however, you are using PetaLinux SDK version "2018.3".
-Please input "y" to continue. Otherwise it will exit![n]y
 ```
 
 なんか時間がかかっててうまくビルドしている様子...

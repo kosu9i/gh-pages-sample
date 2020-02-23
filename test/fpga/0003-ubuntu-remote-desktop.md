@@ -57,8 +57,8 @@ sudo apt install --assume-yes --fix-broken
 
 参考：[リモートデスクトップ環境をUbuntu 18.04 LTSで作成する](https://qiita.com/ryo-endo/items/00f3ec125917acf4cec7)
 
-ただし、Ubuntu16.04でやる。  
-今度はXilinxのVitisが18.04.2までにしか対応しておらずマイナーバージョンが合わなかったので...
+今度はXilinxのVitisが18.04.2までにしか対応しておらずマイナーバージョンが合わないが無理矢理進める。  
+（一応、Vitisのインストールまではできた）
 
 
 ```
@@ -85,4 +85,12 @@ ResultActive=yes
 EOF
 
 ```
+
+[ここ](https://qiita.com/basaro_k/items/86811ed78397d2a3b4b1)を参考にし、Vitisの構築を進める。
+
+ひとまず[Vitisのインストール](https://qiita.com/basaro_k/items/86811ed78397d2a3b4b1#vitis%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB)までは正常にできた。
+
+
+
+
 
